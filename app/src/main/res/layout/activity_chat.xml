@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".ChatActivity">
+
+    <TextView
+        android:id="@+id/ngobrolTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="228dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Ngobrol"
+        android:textColor="@color/white"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/kuyTxt"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/kuyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Kuy"
+        android:textColor="@color/pink"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ngobrolTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/backward"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:onClick="pindahset"
+        android:src="@drawable/titik"
+        app:layout_constraintStart_toEndOf="@id/ngobrolTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imvCircularWithStroke"
+        android:layout_width="109dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="500dp"
+        android:padding="5dp"
+        android:src="@drawable/man"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:strokeColor="#00BCD4"
+        app:strokeWidth="5dp" />
+
+    <TextView
+        android:layout_width="155dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="552dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Juned"
+        android:textColor="@color/white"
+        android:textSize="12pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <TextView
+        android:layout_width="195dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="500dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Bro Nongkrong Yuk"
+        android:textColor="@color/white"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imvCircularWithStroke2"
+        android:layout_width="109dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="372dp"
+        android:padding="5dp"
+        android:src="@drawable/man"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:strokeColor="#00BCD4"
+        app:strokeWidth="5dp" />
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="428dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Ligma"
+        android:textColor="@color/white"
+        android:textSize="12pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="164dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="372dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Bals"
+        android:textColor="@color/white"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imvCircularWithStroke3"
+        android:layout_width="109dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="242dp"
+        android:padding="5dp"
+        android:src="@drawable/man"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:strokeColor="#00BCD4"
+        app:strokeWidth="5dp" />
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="315dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Shoppee Security"
+        android:textColor="@color/white"
+        android:textSize="12pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="164dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="272dp"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:text="Jangan Beri Kode.."
+        android:textColor="@color/white"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="82dp"
+        android:layout_height="84dp"
+        android:layout_gravity="end|bottom"
+        android:onClick="handleLogin"
+        android:layout_margin="16dp"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="610dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

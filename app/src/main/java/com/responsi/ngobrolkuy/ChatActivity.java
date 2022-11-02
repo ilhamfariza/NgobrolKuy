@@ -6,21 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class LoginActivity extends AppCompatActivity {
+public class ChatActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_chat);
     }
 
-    public void pindahreg(View view) {
-        Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+    public void pindahset(View view) {
+        Intent intent = new Intent(ChatActivity.this, GantipassActivity.class);
         startActivity(intent);
     }
 
-    public void pindahpic(View view) {
-        Intent intent = new Intent(LoginActivity.this, ProfilePicActivity.class);
+    public void handleLogin(View view) {
+        Intent intent = new Intent(ChatActivity.this, LoginActivity.class);
         startActivity(intent);
     }
 }

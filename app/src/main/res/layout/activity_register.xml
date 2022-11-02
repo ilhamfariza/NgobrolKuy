@@ -49,18 +49,19 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan username Anda"
-                android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                android:hint="Masukkan username Anda"
+                android:textColorHint="@color/light_gray"
+                android:inputType="text"
+                android:textSize="8pt" />
 
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -76,18 +77,19 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan email Anda"
-                android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                android:hint="Masukkan Email Anda"
+                android:textColorHint="@color/light_gray"
+                android:inputType="textEmailAddress"
+                android:textSize="8pt" />
 
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -103,18 +105,19 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan password Anda"
-                android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                android:hint="Masukkan password Anda"
+                android:textColorHint="@color/light_gray"
+                android:inputType="textPassword"
+                android:textSize="8pt" />
 
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -130,7 +133,7 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -153,6 +156,7 @@
         android:layout_marginTop="32dp">
 
         <TextView
+            android:id="@+id/pindah2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="REGISTER"
@@ -163,11 +167,13 @@
             android:layout_marginStart="18dp"
             android:layout_marginEnd="18dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="8dp"
+            android:onClick="pindah2"/>
 
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/punyaakun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sudah punya akun?"
@@ -179,6 +185,7 @@
         android:background="@drawable/rounded_outline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="pindah2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
